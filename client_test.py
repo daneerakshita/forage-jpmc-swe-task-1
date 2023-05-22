@@ -18,7 +18,14 @@ class ClientTest(unittest.TestCase):
 
 
   """ ------------ Add more unit tests ------------ """
+  """Adding testcase to handle edge values"""
+  def test_getDataPoint_testingedgevalues(self):
+    quotes = [
+      {'top_ask': {'price': 119.2, 'size': 36}, 'timestamp': '2024-02-11 22:06:30.572453', 'top_bid': {'price': 1200000000.48, 'size': 109}, 'id': '0.109974697771', 'stock': 'ABC'},
+      {'top_ask': {'price': 121.68, 'size': 4}, 'timestamp': '2024-02-11 22:06:30.572453', 'top_bid': {'price': 0.87, 'size': 81}, 'id': '0.109974697771', 'stock': 'DEF'}
+    ]
 
+"""Adding testcase to handle negative values"""
 
 
 if __name__ == '__main__':
